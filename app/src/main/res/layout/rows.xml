@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    style="@style/rowBgcolor"
+    android:descendantFocusability="afterDescendants"
+    android:orientation="vertical"
+
+    android:padding="1dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        tools:text="Title here" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:text="Desc here"
+        android:textSize="14dp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/buttonColor"
+            android:id="@+id/btn_update_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:padding="5dp"
+            android:text="Update Note"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            app:cornerRadius="15dp" />
+
+        <Button
+            style="@style/buttonColor"
+            android:id="@+id/btn_delete_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="2dp"
+            android:padding="5dp"
+            android:text="Delete Note"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            app:cornerRadius="15dp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
